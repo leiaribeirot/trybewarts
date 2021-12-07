@@ -3,6 +3,8 @@ const login = document.querySelector('#login');
 const password = document.querySelector('#password');
 const agree = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
+const textArea = document.getElementById('textarea');
+const count = document.getElementById('counter');
 
 // Validação Login
 
@@ -26,4 +28,11 @@ agree.addEventListener('click', () => {
   } else {
     submitBtn.disabled = false;
   }
+});
+
+// Atualiza TextArea
+textArea.addEventListener('keyup', () => {
+  const max = textArea.maxLength;
+  const max2 = textArea.value.length;
+  count.innerText = max - max2;
 });
