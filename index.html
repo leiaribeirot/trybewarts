@@ -63,49 +63,36 @@
               </div>
           </section>
         </section>
-
-            <label id="label-content" for="">
-              Qual conteúdo você está com mais vontade de aprender?
-            </label>
+        <section class="form-group content">
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="HoFs" />
-              <label class="form-check-label" for="hofs">
-                HoFs
-              </label>
+              <label class="form-check-label" for="hofs">HoFs</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="Jest" />
-              <label class="form-check-label" for="jest">
-                Jest
-              </label>
+              <label class="form-check-label" for="jest">Jest</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="Promises" />
-              <label class="form-check-label" for="promises">
-                Promises
-              </label>
+              <label class="form-check-label" for="promises">Promises</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="React" />
-              <label class="form-check-label" for="react">
-                React
-              </label>
+              <label class="form-check-label" for="react">React</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="SQL" />
-              <label class="form-check-label" for="sql">
-                SQL
-              </label>
+              <label class="form-check-label" for="sql">SQL</label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="Python" />
-              <label class="form-check-label" for="python">
-                Python
-              </label>
-            </div>'
+              <label class="form-check-label" for="python">Python</label>
+            </div>
+        </section>
      
 
-        <section class="form-group" id="">
+        <section class="form-group" id="avalia-trybewarts">
           <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="rate" value="1" />
@@ -148,26 +135,26 @@
             <label class="form-check-label" for="inlineCheckbox6">10</label>
           </div>
         </section>
-        <section>
-          <div class="mb-3">
-            <label for="Textarea1" class="textarea">Deixe seu comentário:</label>
+        <section class="mb-3 form-group" >
+          <div>
+            <label for="Textarea1" class="textarea">Deixe seu comentário:<span id="counter">500</span>/500</label>
             <textarea class="form-control" id="textarea" col="5" rows="10" maxlength="500"></textarea>
           </div>
         </section>
         <section>
+          <div class="form-check form-check-inline" id="agree">
           <label class="form-check-label" id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" name="rate" id="" />
+          <input class="form-check-input" type="checkbox" value="agree" id="agreement" />
           </div>
         </section>
-        <section>
-          <button class="btn btn-primary" type="submit" id="submit-btn">Envair</button>
+        <section class="submit">
+          <button id="submit-btn" class="btn btn-primary" type="submit">Enviar</button>
         </section>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
   <footer class="footer">
-    <p>Direitos Reservados à Tribewarts © </p>
+    <p>Direitos reservados à Trybewarts©</p>
     <p>Página Desenvolvida por Léia Ribeiro e Quesia Mendes</p>
   </footer>
 </body>

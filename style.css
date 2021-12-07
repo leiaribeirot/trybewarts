@@ -30,7 +30,7 @@ img {
 
 .trybewarts-header-logo {
   width: 80px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 #trybewarts-header-title {
@@ -45,6 +45,7 @@ img {
 #name-lastname {
   display: flex;
   align-items: flex-start;
+  padding: 5px 0;
 }
 
 /* Main */
