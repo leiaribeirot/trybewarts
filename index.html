@@ -29,87 +29,83 @@
   </header>
   <main>
     <form id="evaluation-form">
-      <section id="name-lastname">
-        <input class="form-control" type="text" id="input-name" placeholder="Nome" />
-        <input class="form-control" type="text" id="input-lastname" placeholder="Sobrenome" />
-        
-      </section>
+        <section class="primeira-section">
+            <section id="name-lastname">
+              <input class="form-control" type="text" id="input-name" placeholder="Nome" />
+              <input class="form-control" type="text" id="input-lastname" placeholder="Sobrenome" />
+            </section>
 
-      <div class="input-group mb-3">
-        <input class="form-control" type="email" id="input-email" placeholder="Email" />
-        <label class="input-group-text" for="house">Casa:</label>
-        <select class="form-select" name="house" id="house">
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
-      </div>
+            <div class="input-group mb-3">
+              <input class="form-control" type="email" id="input-email" placeholder="Email" />
+              <label class="input-group-text" for="house">Casa:</label>
+              <select class="form-select" name="house" id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </div>
+        </section>
+        <section id="segunda-section">
+          <section class="">
+            <label id="label-family">Qual sua família?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="family" id="frontend" value="Frontend" />
+                <label class="form-check-label" for="frontend">Frontend</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="family" id="backend" value="Backend" />
+                <label class="form-check-label" for="backend">Backend</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="family" id="fullstack" value="FullStack" />
+                <label class="form-check-label" for="fullstack">FullStack</label>
+              </div>
+          </section>
+        </section>
 
-      <label id="label-family" for="">Qual sua familia?</label>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="family" id="frontend" value="Frontend" />
+            <label id="label-content" for="">
+              Qual conteúdo você está com mais vontade de aprender?
+            </label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="HoFs" />
+              <label class="form-check-label" for="hofs">
+                HoFs
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Jest" />
+              <label class="form-check-label" for="jest">
+                Jest
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Promises" />
+              <label class="form-check-label" for="promises">
+                Promises
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="React" />
+              <label class="form-check-label" for="react">
+                React
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="SQL" />
+              <label class="form-check-label" for="sql">
+                SQL
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Python" />
+              <label class="form-check-label" for="python">
+                Python
+              </label>
+            </div>'
+     
 
-        <label class="form-check-label" for="frontend">
-          Frontend
-        </label>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="family" id="backend" value="Backend" />
-
-          <label class="form-check-label" for="backend">
-            Backend
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="family" id="fullstack" value="Fullstack" />
-
-          <label class="form-check-label" for="fullstack">
-            Fullstack
-          </label>
-        </div>
-
-        <label id="label-content" for="">
-          Qual conteúdo você está com mais vontade de aprender?
-        </label>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="HoFs" />
-          <label class="form-check-label" for="hofs">
-            HoFs
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Jest" />
-          <label class="form-check-label" for="jest">
-            Jest
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Promises" />
-          <label class="form-check-label" for="promises">
-            Promises
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="React" />
-          <label class="form-check-label" for="react">
-            React
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="SQL" />
-          <label class="form-check-label" for="sql">
-            SQL
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Python" />
-          <label class="form-check-label" for="python">
-            Python
-          </label>
-        </div>
-
-        <section>
+        <section class="form-group" id="">
           <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="rate" value="1" />
