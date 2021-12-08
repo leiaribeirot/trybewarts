@@ -3,7 +3,8 @@
 
 ---
 
-**É muito importante receber este feedback, para que possamos melhorar a qualidade do conteúdo oferecido às pessoas estudantes.**
+**Léia: Eu amei esse projeto. Foi de longe o mais difícil para mim, inclusive a requisito 21 fritou nossas cabeças, mas tá lá. Feliz demais com o resultado e a experiência de trabalhar nesse projeto com a Quesia. E é uma experiência completamente nova que amei demais viver.
+Obrigada Quesia pela disposição, paciência e angajamento. Uma vitória nossa!**
 
 ---
 
@@ -11,7 +12,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: /10/
 
 ---
 
@@ -23,7 +24,7 @@
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: /Léia Ribeiro e Quesia Mendes/
 
 ---
 
