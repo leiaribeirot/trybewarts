@@ -4,7 +4,7 @@ const password = document.querySelector('#password');
 const agree = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 const textArea = document.getElementById('textarea');
-const count = document.getElementById('counter');
+const contador = document.getElementById('counter');
 
 // Validação Login
 
@@ -32,7 +32,7 @@ agree.addEventListener('click', () => {
 
 // Atualiza TextArea
 textArea.addEventListener('keyup', () => {
-  const max = textArea.maxLength;
-  const max2 = textArea.value.length;
-  count.innerText = max - max2;
+  const areaText = textArea.maxLength;
+  const cont = textArea.value.length;
+  contador.innerText = areaText - cont;
 });
