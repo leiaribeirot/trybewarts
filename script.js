@@ -37,15 +37,16 @@ textArea.addEventListener('keyup', () => {
   contador.innerText = areaText - cont;
 });
 
-const materias = document.querySelectorAll('.subject');
-function checkMaterias() {
-  const materiasChecked = [];
-  for (let index = 0; index < materias.length; index += 1) {
-    if (materias[index].checked) {
-      materiasChecked.push(`${materias[index].value}`);
+// Salva Input Formulário
+
+function inputMaterias(arr) {
+  const matSalvas = [];
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i].checked) {
+      matSalvas.push(arr[i].value);
     }
   }
-  return materiasChecked;
+  return matSalvas;
 }
 
 function validate() {
@@ -59,11 +60,11 @@ function validate() {
     const avaliacao = document.querySelector('input[name ="rate"]:checked').value;
     const forms = document.getElementById('evaluation-form');
     const observacoes = document.getElementById('textarea').value;
+    const conteudo = inputMaterias(document.getElementsByName('conteudo'));
     forms.innerHTML = '';
     const formulario = `Nome: ${name} ${lastName} Email: ${emailInput} 
-    Casa: ${house} Família: ${family} Matérias: ${checkMaterias()}
-    Avaliação: ${avaliacao}
-    Observações: ${observacoes}`;
+    Casa: ${house} Família: ${family} Matérias: ${conteudo.join(', ')}
+    Avaliação: ${avaliacao} Observações: ${observacoes}`;
     forms.innerText = formulario;
   });
 }
