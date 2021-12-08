@@ -37,7 +37,7 @@ textArea.addEventListener('keyup', () => {
   contador.innerText = areaText - cont;
 });
 
-// Salva Input Formulário
+// Salva Input Formulário Geral
 
 function inputMaterias(arr) {
   const matSalvas = [];
